@@ -1,0 +1,28 @@
+                /*comentário no CSS */
+                /* Comentário no CSS */
+                
+                body {
+                    background-color: #c9c9c9;
+                    color: #232323;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 16px;
+                }
+                
+                p {
+                    color: blue;
+                }
+                /* Classe em CSS */
+                
+                .destaque {
+                    font-style: italic;
+                    font-size: 12px;
+                    text-align: right;
+                    background-color: #ffd700;
+                }
+                /* ID em CSS */
+                
+                #p2 {
+                    font-weight: bold;
+                }
+                /* Usamos as Classes para o Estilo em CSS */
+                /* Usamos os IDs para o JavaScript */

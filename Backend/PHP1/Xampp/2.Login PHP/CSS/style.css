@@ -1,0 +1,59 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/0d/ff/86/0dff8611fee0a4670abc204fd34f4d06.jpg);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.contato {
+    width: 27%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 35px;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+h2 {
+    margin-bottom: 35px;
+}
+
+
+/* Imput */
+
+.form-group>input {
+    margin-top: 5px;
+    padding: 2px 3px;
+    border-radius: 5px;
+    height: 35px;
+    width: 100%;
+    font-size: 1.2em;
+    border: solid 2px #cccccc;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    font-color
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+    transition: 0.5s;
+}
+
+.btn-success {
+    background-color: #1d8f00;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #e73f50;
+    color: #ffffff;
+}

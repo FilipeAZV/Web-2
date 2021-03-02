@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site - HTML e CSS</title>
+    <!-- Inclui o arquivo CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Inclui o arquivo de ícone (favicon) -->
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="banner">
+            <img class="img-banner" src="img/banner.png" alt="Meu Pet" title="Meu Pet">
+        </div> <!-- fecha /banner -->
+
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="produtos.html">PRODUTOS</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="sobre.html">SOBRE</a>
+        </div> <!-- fecha /menu -->
+
+        <div class="corpo">
+            <h3>Entre em contato</h3>
+
+            <!-- Formulário de contato -->
+            <div class="contato">
+                <form action="confirma-contato.html" method="POST">
+                    <p class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Informe o nome" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="idade">Idade</label>
+                        <input type="number" id="idade" name="idade">
+                    </p>
+
+                    <p class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+
+                    <p class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <select id="cidade" name="cidade">
+                            <option value="1">Porto Alegre</option>
+                            <option value="2">Gramado</option>
+                            <option value="3">Novo Hamburgo</option>
+                            <option value="4">São Leopoldo</option>
+                            <option value="5">Ivoti</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Sexo:</label>
+
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="feminino" value="feminino" name="sexo">
+
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="masculino" value="masculino" name="sexo">
+
+                        <label for="outros">Outros</label>
+                        <input type="radio" id="outros" value="outros" name="sexo">
+                    </p>
+
+                    <p>
+                        <label for="cnh">Habilitação</label>
+                        <input type="checkbox" id="cnh" name="cnh">
+                    </p>
+
+                    <p>
+                        <button class="btn btn-success" type="submit">Enviar</button>
+                        <button class="btn btn-danger" type="reset">Limpar</button>
+                    </p>
+                </form>
+
+            </div> <!-- fecha /contato -->
+
+        </div> <!-- fecha /corpo -->
+
+        <div class="rodape">
+
+            <div class="rodape-links">
+                <p><a href="index.html">HOME</a></p>
+                <p><a href="produtos.html">PRODUTOS</a></p>
+                <p><a href="contato.html">CONTATO</a></p>
+                <p><a href="sobre.html">SOBRE</a></p>
+            </div>
+
+            <div class="rodape-conteudo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe rem accusamus voluptates maiores voluptatibus impedit quidem, dolorum, quod veniam voluptatem reiciendis vitae libero deleniti ipsa quaerat eum qui dolores?</div>
+
+            <div class="rodape-redes-sociais">
+                <p>
+                    <img class="icone-rede-social" src="img/icon-facebook.png" alt="Facebook">
+                    <span>
+                        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    </span>
+                </p>
+
+                <p>
+                    <img src="img/icon-instagram.png" alt="Instagram" class="icone-rede-social">
+                    <span>
+                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    </span>
+                </p>
+
+                <p>
+                    <img src="img/icon-whatsapp.png" alt="Whatsapp" class="icone-rede-social">
+                    <span>
+                        <a href="https://we.whatsapp.com/" target="_blank">Whatsapp</a>
+                    </span>
+                </p>
+            </div>
+
+        </div> <!-- fecha /rodape -->
+    </div> <!-- fecha /container -->
+
+    <!-- Ctrl + ;           (comentário) -->
+    <!-- Alt + Z            (ajusta o conteúdo no editor) -->
+    <!-- Alt + Shift + F    (formata o código automaticamente) -->
+</body>
+
+</html>

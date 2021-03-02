@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manipulando DOM</title>
+        <!-- Inclui o arquivo CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h3>Manipulando DOM</h3>
+
+        <h4>Mostrar o texto informado no input</h4>
+
+        <input type="text" id="texto">
+        <button onclick="mostrarTexto()">Mostrar texto</button>
+
+        <p id="resultado4"></p>
+
+        <hr>
+        <h4>Mostrar o nome informado no input (por parâmetro)</h4>
+
+        <input type="text" id="nome">
+        <button onclick="mostrarNome(nome)">Mostrar nome</button>
+
+        <p id="resultado5"></p>
+
+        <hr>
+        <h4>Verificar a hora</h4>
+
+        <p>
+            <button onclick="mostrarHora()">Que hora é?</button>
+        </p>
+
+        <p id="hora"></p>
+
+        <hr>
+        <h4>Modificar texto</h4>
+
+        <p id="p1" onclick="mudarTexto()">
+            Este texto será modificado por JavaScript
+        </p>
+
+        <hr>
+        <p>
+            <img
+                class="img"
+                src="img/koala.jpg"
+                id="p2"
+                alt="Koala"
+                title="Koala"
+                onclick="mudarImg()"
+                ondblclick="mudarBorda()"
+            >
+        </p>
+
+        <hr>
+        <h4>Transformar em Maiúsculas e Minúsculas</h4>
+
+        <p>
+            <input type="text" id="texto1">
+        </p>
+
+        <p>
+            <button onclick="toUpper(texto1)">ToUpper</button>
+            <button onclick="toLower(texto1)">ToLower</button>
+        </p>
+
+        <!-- <h4>Somar 2 valores</h4>
+
+        <p>
+            <label>Valor 1</label>
+            <input id="valor1">
+        </p>
+
+        <p>
+            <label>Valor 2</label>
+            <input id="valor2">
+        </p>
+
+        <p>
+            <button onclick="somar3()">Somar</button>
+        </p>
+
+        <p id="resultado3a">Resultado A</p>
+
+        <p>
+            <input id="resultado3b" readonly disabled>
+        </p>
+
+        <div id="resultado3c">Resultado C</div> -->
+
+        <!-- <p>Input e Function</p>
+
+        <h3>Somar 2 números (valores fixos)</h3>
+        <button onclick="somar1()">Somar 1</button>
+
+        <hr>
+        <h3>Somar 2 números (usuário informa os valores com prompt)</h3>
+        <button onclick="somar2()">Somar 2</button>
+
+        <p id="resultado2">Resultado</p> -->
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <!-- Inclui o arquivo JS -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+<!-- Alt + Z (ajustar o texto no editor) -->

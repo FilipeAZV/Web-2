@@ -1,0 +1,31 @@
+/*estilo do site - HTML e CSS (básico) */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: white
+}
+
+
+/* classe */
+
+.container {
+    height: 800px;
+    width: 80%;
+    /*border: solid blueviolet;
+    border-style: solid;
+    border-color: thistle;
+    border-width: 15px;*/
+    background-color: teal;
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+.banner {
+    height: 150;
+    background-color: cadetblue;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+}

@@ -1,0 +1,383 @@
+/* Estilo do Site - HTML e CSS (básico) */
+
+body {
+    /* Limpa as formatações padrão dos navegadores */
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #232323;
+    /*background-color: #5e5e5e;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;*/
+    background: #5e5e5e url(../img/bg.png) no-repeat;
+    background-size: cover;
+}
+
+
+/* Classes */
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.banner {
+    background-color: #7dcdf2;
+    /*min-height: 150px;*/
+    /*line-height: 150px;*/
+    /*font-size: 3em;
+    font-weight: bold;
+    text-align: center;*/
+}
+
+.img-banner {
+    width: 100%;
+}
+
+.menu {
+    /*          TOP     RIGHT   BOTTOM  LEFT */
+    /*padding:  8px     0       8px     0;   */
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    /*word-spacing: 3em;*/
+    background-color: #ed5564;
+    color: #ffffff;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 25px;
+}
+
+.menu>a:hover {
+    background-color: #e73f50;
+    transition: 0.8s;
+}
+
+.corpo {
+    padding: 35px 75px;
+    min-height: 500px;
+    text-align: justify;
+    background-color: #ffffff;
+}
+
+.rodape {
+    text-align: center;
+    color: #999999;
+    font-size: 0.8em;
+    background-color: #232323;
+    padding: 25px 0 50px 0;
+}
+
+
+/*.rodape > div > p > a {*/
+
+.rodape a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: #ffffff;
+}
+
+.rodape-links {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rodape-conteudo {
+    width: 45%;
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+    /*padding: 0 15px;*/
+}
+
+.rodape-redes-sociais {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.icone-rede-social {
+    width: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+
+/* ===== Transições em CSS ===== */
+
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #ffffff;
+    background-color: #999999;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.box1 {
+    background-color: #0066ff;
+}
+
+.box1:hover {
+    background-color: #0066ff35;
+    color: #232323;
+    border-radius: 50%;
+    transition: 1.2s;
+}
+
+.box2 {
+    background-color: #8a2be2;
+}
+
+.box2:hover {
+    background-color: #892be235;
+    color: #232323;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 300px;
+    transition: 1s;
+}
+
+.box3 {
+    background-color: #e73f50;
+}
+
+.box3:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.box4 {
+    background-color: #1d8f00;
+    width: 100%;
+}
+
+.box4:hover {
+    transform: rotate(-3600deg);
+    transition: 5s;
+}
+
+
+/* ===== Formulário de Contato ===== */
+
+.contato {
+    width: 35%;
+    margin: auto;
+    padding: 15px 35px;
+    margin-bottom: 50px;
+    background-color: #fafafa;
+}
+
+
+/* Input */
+
+.form-group>input,
+select {
+    margin-top: 5px;
+    padding: 2px 3px;
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    border: solid 2px #cccccc;
+}
+
+.form-group>select {
+    height: 35px;
+}
+
+
+/* Botões */
+
+.btn {
+    color: #232323;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+    transition: 0.5s;
+}
+
+.btn-success {
+    background-color: #1d8f00;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #e73f50;
+    color: #ffffff;
+}
+
+
+/* ===== Layout de Produtos */
+
+.produto {
+    height: 120px;
+    width: 80%;
+    margin: auto;
+    border: solid 2px #999999;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    /* --- Deixa lado a lado ---
+    width: 45%;
+    display: inline-block;
+    */
+}
+
+.prod-foto {
+    height: 100%;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+.prod-descricao {
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 50%;
+}
+
+.prod-valor {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff8800;
+    display: inline;
+}
+
+.btn-comprar {
+    float: right;
+}
+
+
+/* ===== Media Queries ===== */
+
+
+/* Extra small (xs): Smartphone (portrait - retrato) */
+
+@media (min-width: 355px) {
+    .contato {
+        width: 80%;
+        background-color: #5e5e5e;
+    }
+    .corpo {
+        padding: 10px;
+    }
+    .menu>a {
+        padding: 10px 15px;
+        font-size: 1em;
+        font-weight: normal;
+    }
+    /*.produto {
+        height: 150px;
+    }
+
+    .prod-foto {
+        height: 50%;
+    }
+
+    .prod-valor {
+        font-size: 1.7em;
+    }*/
+}
+
+
+/* Small (sm): Smartphone (landscape - paisagem) */
+
+@media (min-width: 576px) {
+    .contato {
+        width: 75%;
+        background-color: #e73f50;
+    }
+    .corpo {
+        padding: 20px;
+    }
+}
+
+
+/* Medium (md): Tablet */
+
+@media (min-width: 768px) {
+    .contato {
+        width: 65%;
+        background-color: #7dcdf2;
+    }
+    .corpo {
+        padding: 35px;
+    }
+}
+
+
+/* Large (lg): Notebook */
+
+@media (min-width: 992px) {
+    .contato {
+        width: 55%;
+        background-color: #8a2be2;
+    }
+    .corpo {
+        padding: 55px;
+    }
+    .menu>a {
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 10px 25px;
+    }
+}
+
+
+/* Extra Large (xl): Computador */
+
+@media (min-width: 1200px) {
+    .contato {
+        width: 35%;
+        background-color: #fafafa;
+    }
+    .corpo {
+        padding: 75px;
+    }
+    .menu>a {
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 10px 25px;
+    }
+}
+
+
+/* ===== Cores dos links ===== */
+
+
+/*a:link {
+    color: #ff00b3;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #35b900;
+}
+
+a:hover {
+    color: #00ccff;
+}
+
+a:active {
+    color: #ff0000;
+}*/
